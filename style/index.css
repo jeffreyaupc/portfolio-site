@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  border: 0;
+  letter-spacing: 0.8px;
+}
+
+body {
+  background-color: #5d0000;
+}
+
+#notice {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#btn-notice {
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #5d0000;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-family: monospace;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  width: 44.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#noticeIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: honeydew;
+}
+
+.mainContainer {
+  background-color: #751111;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 41rem;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#sectionOne {
+  background-color: #2a3038;
+  color: white;
+  border-radius: 10px;
+}
+
+#outline {
+  padding: 0 2rem 0.5rem 2rem;
+}
+
+#content {
+  padding: 1rem 0 1rem 0;
+  color: #fa6a6a;
+}
+
+#content ul {
+  list-style-type: none;
+}
+
+#content li {
+  margin-bottom: 0.5rem;
+}
+
+#sectionTwo {
+  padding: 2rem;
+  background-color: #e4f6fd;
+  border-radius: 10px;
+}
+
+#sectionTwo a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #698cff;
+}
+
+#sectionTwo a:hover {
+  -webkit-animation: destinHover 1s infinite;
+          animation: destinHover 1s infinite;
+}
+
+@-webkit-keyframes destinHover {
+  0% {
+    color: #698cff;
+  }
+  50% {
+    color: #00ffbb;
+  }
+  100% {
+    color: #698cff;
+  }
+}
+
+@keyframes destinHover {
+  0% {
+    color: #698cff;
+  }
+  50% {
+    color: #00ffbb;
+  }
+  100% {
+    color: #698cff;
+  }
+}
+/*# sourceMappingURL=index.css.map */
