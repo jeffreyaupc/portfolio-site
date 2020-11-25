@@ -55,6 +55,56 @@ body {
   color: honeydew;
 }
 
+.outerContainer {
+  width: 45rem;
+  padding: 2rem;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 0.5rem;
+}
+
+.btn-tabs.active {
+  background: #751111;
+}
+
+.btn-tabs:focus {
+  outline: none;
+}
+
+.btn-tabs {
+  width: 200px;
+  height: 45px;
+  background: #380000;
+  -webkit-transform: perspective(10px) rotateX(1deg);
+          transform: perspective(10px) rotateX(1deg);
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ffcf5f;
+}
+
+#tab-one {
+  width: 8rem;
+}
+
 .mainContainer {
   background-color: #751111;
   border-radius: 10px;
@@ -68,10 +118,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  opacity: 0;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif;
 }
 
 #sectionOne {
@@ -80,21 +128,159 @@ body {
   border-radius: 10px;
 }
 
-#outline {
-  padding: 0 2rem 0.5rem 2rem;
+#profileOne,
+#profileTwo {
+  display: block;
+  -webkit-animation: switchProfile 1s;
+          animation: switchProfile 1s;
 }
 
-#content {
+@-webkit-keyframes switchProfile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes switchProfile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#jsOne,
+#jsTwo {
+  display: none;
+  -webkit-animation: switchJS 1s;
+          animation: switchJS 1s;
+}
+
+@-webkit-keyframes switchJS {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes switchJS {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#resWebOne,
+#resWebTwo {
+  display: none;
+  -webkit-animation: switchRW 1s;
+          animation: switchRW 1s;
+}
+
+@-webkit-keyframes switchRW {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes switchRW {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.secOne {
+  padding: 0 2rem 0.5rem 2rem;
+  display: block;
+}
+
+#contentProfile,
+#contentJS,
+#contentResWeb {
   padding: 1rem 0 1rem 0;
   color: #fa6a6a;
 }
 
-#content ul {
+#contentProfile ul,
+#contentJS ul,
+#contentResWeb ul {
   list-style-type: none;
 }
 
-#content li {
+#contentProfile li,
+#contentJS li,
+#contentResWeb li {
   margin-bottom: 0.5rem;
+}
+
+#contentResWeb a {
+  text-decoration: none;
+  color: #698cff;
+}
+
+#contentResWeb a:hover {
+  -webkit-animation: destinHover 1s infinite;
+          animation: destinHover 1s infinite;
+}
+
+@-webkit-keyframes destinHover {
+  0% {
+    color: #698cff;
+  }
+  50% {
+    color: #00ffbb;
+  }
+  100% {
+    color: #698cff;
+  }
+}
+
+@keyframes destinHover {
+  0% {
+    color: #698cff;
+  }
+  50% {
+    color: #00ffbb;
+  }
+  100% {
+    color: #698cff;
+  }
+}
+
+#contentJS a {
+  text-decoration: none;
+  color: #698cff;
+}
+
+#contentJS a:hover {
+  -webkit-animation: destinHover 1s infinite;
+          animation: destinHover 1s infinite;
+}
+
+@keyframes destinHover {
+  0% {
+    color: #698cff;
+  }
+  50% {
+    color: #00ffbb;
+  }
+  100% {
+    color: #698cff;
+  }
 }
 
 #sectionTwo {
@@ -112,18 +298,6 @@ body {
 #sectionTwo a:hover {
   -webkit-animation: destinHover 1s infinite;
           animation: destinHover 1s infinite;
-}
-
-@-webkit-keyframes destinHover {
-  0% {
-    color: #698cff;
-  }
-  50% {
-    color: #00ffbb;
-  }
-  100% {
-    color: #698cff;
-  }
 }
 
 @keyframes destinHover {
