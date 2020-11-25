@@ -19,43 +19,96 @@
         </div>
     </header>
     <main>
-        <div class="mainContainer" id="mainContainer">
-            <section id="sectionOne">
-                <div id="outline"><span style="color: rgb(203, 126, 216)">var </span><span style="color: rgb(250, 106, 106)">candidate</span> = {
+        <div class="outerContainer" id="outerContainer">
+            <nav class="menu">
+                <ul>
+                    <li><button class="btn-tabs active" id="tab-profile">Profile</button></li>
+                    <li><button class="btn-tabs" id="tab-js-app">Javascript little applications</button></li>
+                    <li><button class="btn-tabs" id="tab-res-web">Responsive website</button></li>
+                </ul>
+            </nav>
+            <div class="mainContainer" id="mainContainer">
+                <section id="sectionOne">
+                    <div class="secOne" id="profileOne"><span style="color: rgb(203, 126, 216)">var </span><span
+                            style="color: rgb(250, 106, 106)">candidate</span> = {
             
-                    <div id="content">
-                        <ul>
-                            <li>
-                                firstName: <span style="color: rgb(101, 255, 255);">"Jeffrey",</span> <br>
-                            </li>
-                            <li>
-                                lastName: <span style="color: rgb(101, 255, 255);">"Au",</span> <br>
-                            </li>
-                            <li>
-                                education: <span style="color: rgb(101, 255, 255);">"University of Toronto Mississauga",</span> <br>
-                            </li>
-                            <li>
-                                degree: <span style="color: rgb(101, 255, 255);">"Bachelor's of Business Administration",</span> <br>
-                            </li>
-                            <li>
-                                graduateYear: <span style="color: rgb(101, 255, 255);">2020,</span> <br>
-                            </li>
-                            <li>
-                                location: <span style="color: rgb(101, 255, 255);">"Toronto, Ontario"</span>
-                            </li>
-                        </ul>
-                    </div>};
+                        <div id="contentProfile">
+                            <ul>
+                                <li>
+                                    firstName: <span style="color: rgb(101, 255, 255);">"Jeffrey",</span> <br>
+                                </li>
+                                <li>
+                                    lastName: <span style="color: rgb(101, 255, 255);">"Au",</span> <br>
+                                </li>
+                                <li>
+                                    education: <span style="color: rgb(101, 255, 255);">"University of Toronto Mississauga",</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    degree: <span style="color: rgb(101, 255, 255);">"Bachelor's of Business Administration",</span>
+                                    <br>
+                                </li>
+                                <li>
+                                    graduateYear: <span style="color: rgb(101, 255, 255);">2020,</span> <br>
+                                </li>
+                                <li>
+                                    location: <span style="color: rgb(101, 255, 255);">"Toronto, Ontario"</span>
+                                </li>
+                            </ul>
+                        </div>};
 
-                </div>
-            </section>
-            <section id="sectionTwo">
-                <div>destination: &lta href="<a href="https://github.com/jeffreyaupc" target="_blank">Github</a>"&gt </div>
-                <div>destination: &lta href="<a href="https://www.linkedin.com/in/jeffrey-au-538567169/" target="_blank">LinkedIn</a>"&gt </div>
-                <div>destination: &lta href="<a href="https://www.canva.com/design/DAENVmXHZxY/9NV2bRTqPjgF-JUInzL0KQ/view?utm_content=DAENVmXHZxY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Resume</a>"&gt </div>
-                <div>destination: &lta href="<a href="mailto:jeffaupc@gmail.com" target="_blank">Email</a>"&gt </div>
-                <div>destination: &lta href="<a href="https://medium.com/@jeffaupc" target="_blank">Medium</a>"&gt </div>
-                <div>destination: &lta href="<a href="https://jeffreyaupc.github.io" target="_blank">More about me</a>"&gt </div>
-            </section>
+                    </div>
+                    <div class="secOne" id="jsOne"><span style="color: rgb(203, 126, 216)">var </span><span
+                            style="color: rgb(250, 106, 106)">javascript</span> = {
+                            
+                            <div id="contentJS">
+                                <ul>
+                                    <li>
+                                        webApplicationOne: "<a href="https://jeffreyaupc.github.io/gameofcards/">Game of Cards</a>"
+                                    </li>
+                                    <li>
+                                        webApplicationTwo: "<a href="https://jeffreyaupc.github.io/guess-number-game/">Guess Number Game</a>"
+                                    </li>
+                                </ul>
+                            </div>};
+
+                    </div>
+                    <div class="secOne" id="resWebOne"><span style="color: rgb(203, 126, 216)">var </span><span
+                            style="color: rgb(250, 106, 106)">responsiveWebsite</span> = {
+                    
+                            <div id="contentResWeb"><ul>
+                                <li>
+                                    websiteOne: "<a href="https://jeffreyaupc.github.io/">Personal Website</a>"
+                                    
+                                </li>
+                                <li>
+                                    websiteTwo: "<a href="https://jeffreyaupc.github.io/clone-website-McDonalds/" target="_blank">Cloned website of McDonald's</a>"
+                                </li>
+                            </ul>
+                            </div>};
+
+                    </div>
+                </section>
+                <section id="sectionTwo">
+                    <div class="secTwo" id="profileTwo">
+                        <div>destination: &lta href="<a class="links" href="https://github.com/jeffreyaupc" target="_blank">Github</a>"&gt </div>
+                        <div>destination: &lta href="<a class="links" href="https://www.linkedin.com/in/jeffrey-au-538567169/"
+                                target="_blank">LinkedIn</a>"&gt </div>
+                        <div>destination: &lta href="<a class="links" 
+                                href="https://www.canva.com/design/DAENVmXHZxY/9NV2bRTqPjgF-JUInzL0KQ/view?utm_content=DAENVmXHZxY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                                target="_blank">Resume</a>"&gt </div>
+                        <div>destination: &lta href="<a class="links" href="mailto:jeffaupc@gmail.com" target="_blank">Email</a>"&gt </div>
+                        <div>destination: &lta href="<a class="links" href="https://medium.com/@jeffaupc" target="_blank">Medium</a>"&gt </div>
+                        <div>destination: &lta href="<a class="links" href="https://jeffreyaupc.github.io" target="_blank">Personal Website</a>"&gt </div>
+                    </div>
+                    <div class="secTwo" id="jsTwo">
+                        Check out my github for more! <a href="https://github.com/jeffreyaupc" target="_blank">Click Me</a>
+                    </div>
+                    <div class="secTwo" id="resWebTwo">
+                        Check out my github for more! <a href="https://github.com/jeffreyaupc" target="_blank">Click Me</a>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     <script src="index.js"></script>
