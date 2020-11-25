@@ -94,6 +94,7 @@ var blinkblink = setInterval(blink, 800);
 
 function showProfile() {
   outerContainer.style.opacity = "1";
+  outerContainer.style.visibility = "visible";
 }
 
 function clickMsg() {
