@@ -66,6 +66,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
