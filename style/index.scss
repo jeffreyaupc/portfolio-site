@@ -44,7 +44,51 @@ body {
   color: honeydew;
 }
 
+.outerContainer {
+  width: 45rem;
+  padding: 2rem;
+  margin: 0 auto;
+  // border: 1px solid magenta;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 0.5rem;
+}
+
+.btn-tabs.active {
+  background: #751111;
+}
+
+.btn-tabs:focus {
+  outline: none;
+}
+
+.btn-tabs {
+  width: 200px;
+  height: 45px;
+  background: rgb(56, 0, 0);
+  transform: perspective(10px) rotateX(1deg);
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: rgb(255, 207, 95);
+}
+
+#tab-one {
+  width: 8rem;
+}
+
 .mainContainer {
+  // border: 1px solid magenta;
   background-color: rgb(117, 17, 17);
   border-radius: 10px;
   margin: 0 auto;
@@ -55,8 +99,6 @@ body {
   font-size: 1.5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  opacity: 0;
-  transition: all 0.8s ease;
 }
 
 #sectionOne {
@@ -65,22 +107,110 @@ body {
   border-radius: 10px;
 }
 
-#outline {
-  padding: 0 2rem 0.5rem 2rem;
+#profileOne,
+#profileTwo {
+  display: block;
+  animation: switchProfile 1s;
+}
+@keyframes switchProfile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#content {
+#jsOne,
+#jsTwo {
+  display: none;
+  animation: switchJS 1s;
+}
+@keyframes switchJS {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#resWebOne,
+#resWebTwo {
+  display: none;
+  animation: switchRW 1s;
+}
+@keyframes switchRW {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.secOne {
+  padding: 0 2rem 0.5rem 2rem;
+  display: block;
+}
+
+#contentProfile,
+#contentJS,
+#contentResWeb {
   padding: 1rem 0 1rem 0;
   // color: rgb(192, 240, 255);
   color: rgb(250, 106, 106);
 }
 
-#content ul {
+#contentProfile ul,
+#contentJS ul,
+#contentResWeb ul {
   list-style-type: none;
 }
 
-#content li {
+#contentProfile li,
+#contentJS li,
+#contentResWeb li {
   margin-bottom: 0.5rem;
+}
+
+#contentResWeb a {
+  text-decoration: none;
+  color: rgb(105, 140, 255);
+}
+
+#contentResWeb a:hover {
+  animation: destinHover 1s infinite;
+}
+@keyframes destinHover {
+  0% {
+    color: rgb(105, 140, 255);
+  }
+  50% {
+    color: rgb(0, 255, 187);
+  }
+  100% {
+    color: rgb(105, 140, 255);
+  }
+}
+
+#contentJS a {
+  text-decoration: none;
+  color: rgb(105, 140, 255);
+}
+#contentJS a:hover {
+  animation: destinHover 1s infinite;
+}
+@keyframes destinHover {
+  0% {
+    color: rgb(105, 140, 255);
+  }
+  50% {
+    color: rgb(0, 255, 187);
+  }
+  100% {
+    color: rgb(105, 140, 255);
+  }
 }
 
 #sectionTwo {
