@@ -104,7 +104,7 @@ function clickMsg() {
   blinkIcon.style.marginTop = "-0.5rem";
   blinkIcon.style.color = "grey";
   blinkEle.style.color = "grey";
-  outerContainer.style.opacity = "1";
+  showProfile();
 }
 
 blinkEle.addEventListener("click", clickMsg);
