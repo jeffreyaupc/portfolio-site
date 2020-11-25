@@ -55,7 +55,7 @@ body {
   color: honeydew;
 }
 
-.outerContainer {
+#outerContainer {
   width: 45rem;
   padding: 2rem;
   margin: 0 auto;
@@ -67,8 +67,8 @@ body {
           justify-content: center;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 
 .menu ul {
@@ -106,7 +106,7 @@ body {
   width: 8rem;
 }
 
-.mainContainer {
+#mainContainer {
   background-color: #751111;
   border-radius: 10px;
   margin: 0 auto;
@@ -119,8 +119,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
- "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 #sectionOne {
@@ -205,7 +204,7 @@ body {
 }
 
 .secOne {
-  padding: 0 2rem 0.5rem 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   display: block;
 }
 
@@ -310,6 +309,329 @@ body {
   }
   100% {
     color: #698cff;
+  }
+}
+
+/*** media ***/
+@media (max-width: 1680px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  #btn-notice {
+    width: 36rem;
+    font-size: 2.25rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  #outerContainer {
+    width: 43rem;
+  }
+  #mainContainer {
+    width: 39rem;
+    font-size: 1.3rem;
+    border-radius: 10;
+  }
+  #noticeIcon {
+    font-size: 1.5rem;
+  }
+  .btn-tabs {
+    font-size: 1.1rem;
+  }
+  #tab-profile {
+    width: 120px;
+  }
+  .secOne {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 180px;
+  }
+  #tab-res-web {
+    width: 160px;
+  }
+  #contentProfile {
+    padding: 1rem 0 0 0;
+  }
+  #sectionTwo {
+    padding: 1.5rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  #btn-notice {
+    width: 36rem;
+    font-size: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  #outerContainer {
+    width: 43rem;
+  }
+  #mainContainer {
+    width: 39rem;
+    font-size: 1.25rem;
+    border-radius: 10;
+  }
+  #noticeIcon {
+    font-size: 1.3rem;
+  }
+  .btn-tabs {
+    font-size: 1.1rem;
+  }
+  #tab-profile {
+    width: 120px;
+  }
+  .secOne {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 180px;
+  }
+  #tab-res-web {
+    width: 160px;
+  }
+  #contentProfile {
+    padding: 1rem 0 0 0;
+  }
+  #sectionTwo {
+    padding: 1.5rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  #btn-notice {
+    width: 28rem;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  #outerContainer {
+    width: 40rem;
+  }
+  #mainContainer {
+    width: 36rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+  .menu ul {
+    padding-left: 0.1rem;
+  }
+  .btn-tabs {
+    font-size: 1rem;
+  }
+  #tab-profile {
+    width: 100px;
+  }
+  .secOne {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 180px;
+  }
+  #tab-res-web {
+    width: 160px;
+  }
+  #contentProfile {
+    padding: 1rem 0 0 0;
+  }
+  #sectionTwo {
+    padding: 1.5rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+  #btn-notice {
+    width: 28rem;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #outerContainer {
+    width: 40rem;
+    padding: 0.5rem;
+  }
+  #mainContainer {
+    width: 36rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+  .menu ul {
+    padding-left: 0.1rem;
+  }
+  .btn-tabs {
+    font-size: 1rem;
+  }
+  #tab-profile {
+    width: 100px;
+  }
+  .secOne {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 180px;
+  }
+  #tab-res-web {
+    width: 160px;
+  }
+  #contentProfile {
+    padding: 1rem 0 0 0;
+  }
+  #sectionTwo {
+    padding: 1.5rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  #btn-notice {
+    width: 25rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  #outerContainer {
+    width: 36rem;
+  }
+  #mainContainer {
+    width: 32rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+  .menu ul {
+    padding-left: 0.1rem;
+  }
+  .btn-tabs {
+    font-size: 1rem;
+  }
+  #tab-profile {
+    width: 80px;
+  }
+  .secOne {
+    padding: 0 1rem 0.5rem 1rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 150px;
+  }
+  #tab-res-web {
+    width: 120px;
+  }
+  #contentProfile {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  #sectionTwo {
+    padding: 1rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow: hidden;
+  }
+  #notice {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  #btn-notice {
+    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  #outerContainer {
+    width: 24rem;
+  }
+  #mainContainer {
+    width: 20rem;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+  #noticeIcon {
+    font-size: 1.3rem;
+  }
+  .menu ul {
+    padding-left: 0.1rem;
+  }
+  .btn-tabs {
+    font-size: 1rem;
+  }
+  #tab-profile {
+    width: 80px;
+  }
+  .secOne {
+    padding: 0 1rem 0.5rem 1rem;
+    display: block;
+  }
+  #tab-js-app {
+    width: 150px;
+  }
+  #tab-res-web {
+    width: 120px;
+  }
+  #contentProfile {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  #sectionTwo {
+    padding: 1rem;
+  }
+  #contentProfile li,
+  #contentJS li,
+  #contentResWeb li {
+    margin-bottom: 0.1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
